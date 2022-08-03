@@ -13,3 +13,13 @@ function mul(x,y){
 function div(x,y){
     return x/y;
 }
+
+function operate(operator, x, y){
+
+    switch(operator){
+        case '+': return add(x,y);
+        case '-': return sub(x,y);
+        case '*': return mul(x,y);
+        case '/': return div(x,y);
+    }
+}
