@@ -126,14 +126,14 @@ calcButtons.forEach((btn) => {
                                 break;
                             }
             case 'mulbtn': if(opCounter<1){
-                                display_numbers.push('*');
+                                display_numbers = display_numbers + ' * ';
                                 opCounter++;
                                 break;
                             }
                             else{
                                 let result = operate(operation);
                                 display_numbers = result;
-                                display_numbers.push('*');
+                                display_numbers = display_numbers + ' * ';
                                 break;
                             }
             case 'divbtn': if(opCounter<1){
@@ -154,6 +154,7 @@ calcButtons.forEach((btn) => {
             case 'equalsbtn': let result = operate(operation);
                                 opCounter = 0;
                                 display_numbers = result;
+                                break;
         }
         update_display();
     })
@@ -207,14 +208,14 @@ document.addEventListener ('keypress', (event) => {
                             break;
                         }
         case '*': if(opCounter<1){
-                            display_numbers.push('*');
+                            display_numbers = display_numbers + ' * ';
                             opCounter++;
                             break;
                         }
                         else{
                             let result = operate(operation);
                             display_numbers = result;
-                            display_numbers.push('*');
+                            display_numbers = display_numbers + ' * ';
                             break;
                         }
         case '/': if(opCounter<1){
@@ -228,13 +229,12 @@ document.addEventListener ('keypress', (event) => {
                             display_numbers = display_numbers + ' / ';
                             break;
                         }
-        case 'backspace': display_numbers.pop();
+        case 'Backspace': display_numbers.pop();
                         break;
-        case 'clearbtn': display_numbers = [];
+        case 'Enter': let result = operate(operation);
+                        opCounter = 0;
+                        display_numbers = result;
                         break;
-        case 'enter': let result = operate(operation);
-                            opCounter = 0;
-                            display_numbers = result;
     }
     update_display();
 
