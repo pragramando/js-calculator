@@ -1,0 +1,167 @@
+#display{
+    width: 300px;
+    height: 60px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 2%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;  
+    font-size: 20px;
+    word-break: break-all;
+}
+
+body{
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ux{
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    background-color: beige;
+    border-color: black ;
+    border-style: solid;
+    border-radius: 2%;
+    padding: 5px;
+}
+
+button{
+    background-color: beige;  
+    border-color: burlywood;
+    border-style: solid;
+    border-radius: 5%;  
+    font-weight: bold;
+}
+
+#number0{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;   
+}
+
+#number1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;   
+}
+
+#number2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2; 
+}
+
+#number3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;  
+}
+
+#number4{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;   
+}
+
+#number5{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3; 
+}
+
+#number6{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;   
+}
+
+#number7{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;   
+}
+
+#number8{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+}
+
+#number9{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+}
+
+#sumbtn{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4; 
+    background-color: salmon; 
+}
+
+#subbtn{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;   
+    background-color: salmon; 
+}
+
+#mulbtn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;  
+    background-color: salmon; 
+}
+
+#divbtn{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+    background-color: salmon; 
+}
+
+#equalsbtn{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 6; 
+    background-color: olivedrab; 
+}
+
+#deletebtn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 7;  
+    background-color: rgb(245, 67, 48); 
+}
+
+#clearbtn{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 7; 
+    background-color: rgb(245, 67, 48);   
+}
